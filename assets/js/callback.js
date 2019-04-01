@@ -13,13 +13,11 @@ const holidaysInVaud = {
 
 // 1.
 //---------------------------------------------------------------------------
-function logItems(itemsToLog) {
-  for (let i = 0; i < itemsToLog; i++) {
-    console.log(holidaysInVaud);
+function logItems(itemsToLog) { // reference unit 19. Looping through arrays and objects
+  for (let i = 0; i < itemsToLog.length; i++) {
+    console.log(itemsToLog[i]);
   }
 }
-
-logItems(1); // Will log holidaysInVaud object arrays once
 
 // 2.
 function checkHolidaysInMonth(monthToCheck, allPublicHolidays, callWithHolidays) {
@@ -27,6 +25,7 @@ function checkHolidaysInMonth(monthToCheck, allPublicHolidays, callWithHolidays)
 // 3.
   if (allPublicHolidays[monthToCheck]) {
     const holidays = allPublicHolidays[monthToCheck];
+// 4.
     callWithHolidays(holidays);
   }
 }
