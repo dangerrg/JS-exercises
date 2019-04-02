@@ -19,6 +19,8 @@ function logItems(itemsToLog) { // reference unit 19. Looping through arrays and
   }
 }
 
+logItems(holidaysInVaud);
+ 
 // 2.
 function checkHolidaysInMonth(monthToCheck, allPublicHolidays, callWithHolidays) {
     console.log("Checking holidays for month " + monthToCheck);
